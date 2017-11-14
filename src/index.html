@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>蜜芽-首页</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <!-- jQ插件 -->
+    <script type="text/javascript" src="lib/JQ/jquery-3.2.1.js"></script>
+    <!-- 轮播图插件 -->
+    <link rel="stylesheet" type="text/css" href="lib/carousel/jQuery.pldCarousel.css" />
+    <script type="text/javascript" src="lib/carousel/jQuery.pldCarousel.js"></script>
+</head>
+<body>
+<div class="min">
+    <div id="header_pld"></div>
+    <div id="banner_pld" style="height:480px;">
+        <div class="container" style="position:relative;left:0;top:-6px;z-index:1;"></div>
+    </div>
+    <div id="hotBrand">
+        <div class="container clearfix">
+            <div class="Brand fr">
+                <h3>热卖品牌</h3>
+                <a href="#"><img src="img/idx_hotBrand1.jpg" /></a>
+                <a href="#"><img src="img/idx_hotBrand2.jpg" /></a>
+                <a href="#"><img src="img/idx_hotBrand3.jpg" /></a>
+                <a href="#"><img src="img/idx_hotBrand4.jpg" /></a>
+                <a href="#"><img src="img/idx_hotBrand5.jpg" /></a>
+                <a href="#"><img src="img/idx_hotBrand6.jpg" /></a>
+            </div>
+            <div class="advertise">
+                <a href="#"><img src="img/idx_advertise.jpg" /></a>
+            </div>
+        </div>
+    </div>
+    <div id="merchandise">
+        <div class="container">
+            <div class="recommend">
+                <h3>为你推荐<span>千万妈妈 精明之选</span></h3>
+                <ul class="clearfix">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="todaySale">
+                <h3>今日特卖<span>每天10点上新</span></h3>
+            </div>
+            <div class="bsetproduct"></div>
+        </div>
+    </div>
+    <div id="footer_pld"></div>
+ </div>
+    <!-- 链接头部和尾部的内容 -->
+    <script>
+        (function($){
+            $('#header_pld').load('html/header.html');
+            $('#footer_pld').load('html/footer.html');
+        })(jQuery);
+    </script>
+    <!-- 轮播图 -->
+    <script>
+        (function($){
+            $('#banner_pld .container').pldCarousel({
+                imgs:["img/banner1.jpg","img/banner2.jpg","img/banner3.jpg","img/banner4.jpg","img/banner5.jpg","img/banner6.jpg","img/banner7.jpg"],
+                type:'fade',
+                width:1400,
+                height:480,
+                buttons:false,
+            })
+        })(jQuery);
+    </script>
+    
+</body>
+</html>

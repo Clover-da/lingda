@@ -1,0 +1,142 @@
+footer {
+  border-top: 2px solid #ccc;
+}
+
+footer .foot_t {
+  box-sizing: border-box;
+  padding: 0 60px;
+  height: 138px;
+  border-bottom: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+footer .foot_t a {
+  display: inline-block;
+  padding: 0 40px;
+}
+
+footer .foot_t a i {
+  display: block;
+  height: 54px;
+  width: 54px;
+  line-height: 54px;
+  color: #FA4B9B;
+  text-align: center;
+  margin: 0 auto;
+}
+
+footer .foot_t a span {
+  display: block;
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
+  color: #999999;
+}
+
+footer .foot_t a span:nth-child(2) {
+  color: #000;
+  font-weight: bold;
+}
+
+footer .foot_c {
+  box-sizing: border-box;
+  height: 170px;
+  border-bottom: 1px solid #ddd;
+  padding: 0 60px;
+  padding-top: 18px;
+}
+
+footer .foot_c .foot_cl {
+  float: left;
+  width: 720px;
+  border-right: 1px solid #ddd;
+}
+
+footer .foot_c .foot_cl ul {
+  float: left;
+  padding: 0 26px;
+  padding-bottom: 5px;
+}
+
+footer .foot_c .foot_cl ul li {
+  font-size: 13px;
+}
+
+footer .foot_c .foot_cl ul li h4 {
+  line-height: 24px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+footer .foot_c .foot_cl ul li a {
+  line-height: 22px;
+}
+
+footer .foot_c .foot_cr {
+  float: left;
+  padding-left: 15px;
+}
+
+footer .foot_c .foot_cr h4 {
+  line-height: 24px;
+  font-weight: bold;
+  padding-bottom: 3px;
+}
+
+footer .foot_c .foot_cr div span {
+  display: inline-block;
+  height: 118px;
+  width: 76px;
+  margin-right: 5px;
+  background: url("../img/sjewm.jpg") no-repeat;
+}
+
+footer .foot_c .foot_cr div span:nth-child(2) {
+  background: url("../img/index_fd_wb.gif") top left no-repeat, url("../img/index_fd_wx.gif") bottom left no-repeat;
+}
+
+footer .foot_b {
+  padding: 8px 0;
+}
+
+footer .foot_b ul li {
+  float: left;
+  line-height: 38px;
+  font-size: 12px;
+}
+
+footer .foot_b ul li a {
+  border-right: 1px solid #ddd;
+  padding: 0 16px;
+}
+
+footer .foot_b ul li a:hover {
+  color: #FA4B9B;
+}
+
+footer .foot_b ul li:last-child a {
+  border-right: 0 none;
+}
+
+footer .foot_b ol li {
+  float: left;
+  line-height: 23px;
+  font-size: 12px;
+  color: #999999;
+}
+
+footer .foot_b ol li span {
+  border-right: 1px solid #ddd;
+  padding: 0 8px;
+}
+
+footer .foot_b ol li:last-child span {
+  border-right: 0 none;
+}
+
+footer .foot_b p {
+  padding-left: 330px;
+  line-height: 23px;
+  font-size: 12px;
+  color: #999999;
+}

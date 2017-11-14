@@ -1,0 +1,150 @@
+.signIn .signIn_t {
+  padding: 120px 50px 80px 50px;
+}
+
+.signIn .signIn_t .signIn_l {
+  height: 480px;
+  width: 600px;
+  background: url("../img/signIn.jpg") left top no-repeat;
+  position: relative;
+  margin-right: 10px;
+}
+
+.signIn .signIn_t .signIn_l a {
+  display: inline-block;
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  top: 50px;
+  left: 40px;
+}
+
+.signIn .signIn_t .signIn_l img {
+  height: 87px;
+  width: 87px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.signIn .signIn_t .signIn_r form {
+  box-sizing: border-box;
+  width: 350px;
+  border: 1px solid #eee;
+  padding: 0 20px;
+}
+
+.signIn .signIn_t .signIn_r form p {
+  box-sizing: border-box;
+  height: 40px;
+  width: 305px;
+  margin: 12px 0;
+  line-height: 40px;
+  font-size: 16px;
+}
+
+.signIn .signIn_t .signIn_r form p.p1 {
+  font-size: 20px;
+  margin: 12px 0 22px 0;
+}
+
+.signIn .signIn_t .signIn_r form p.p1 span {
+  font-size: 13px;
+}
+
+.signIn .signIn_t .signIn_r form p.p1 span a:hover {
+  color: #F450A2;
+}
+
+.signIn .signIn_t .signIn_r form p.p2, .signIn .signIn_t .signIn_r form p.p5, .signIn .signIn_t .signIn_r form p.p6 {
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px 1px #eee inset;
+  padding: 0 10px;
+  position: relative;
+}
+
+.signIn .signIn_t .signIn_r form p.p2 i, .signIn .signIn_t .signIn_r form p.p5 i, .signIn .signIn_t .signIn_r form p.p6 i {
+  font-size: 20px;
+  color: #CBCBCB;
+  margin-right: 5px;
+}
+
+.signIn .signIn_t .signIn_r form p.p3 span {
+  display: inline-block;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px 1px #eee;
+  border-right: 0 none;
+  border-bottom: 0 none;
+  text-align: center;
+  height: 40px;
+  width: 305px;
+  background-color: #FAFAFA;
+}
+
+.signIn .signIn_t .signIn_r form p.p4 input {
+  box-sizing: border-box;
+  height: 40px;
+  width: 144px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px 1px #eee inset;
+  padding: 0 10px;
+  margin-right: 20px;
+}
+
+.signIn .signIn_t .signIn_r form p.p4 span {
+  display: inline-block;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px 1px #eee;
+  border-right: 0 none;
+  border-bottom: 0 none;
+  text-align: center;
+  height: 40px;
+  width: 140px;
+  background-color: #FAFAFA;
+}
+
+.signIn .signIn_t .signIn_r form p.p7 {
+  font-size: 14px;
+  color: #A9A9A9;
+}
+
+.signIn .signIn_t .signIn_r form p.p7 a {
+  color: #F450A2;
+}
+
+.signIn .signIn_t .signIn_r form p.p7 a:hover {
+  text-decoration: underline;
+}
+
+.signIn .signIn_t .signIn_r form p.p8 input {
+  height: 40px;
+  width: 305px;
+  background-color: #F450A2;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.signIn .signIn_t .signIn_r form .pwdyz {
+  height: 50px;
+  width: 305px;
+  background-color: #F450A2;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.signIn .signIn_t .signIn_r form .hidden {
+  display: none;
+}
+
+.signIn .signIn_b {
+  padding: 40px;
+  font-size: 13px;
+  color: #CFCCCF;
+  padding-left: 100px;
+}

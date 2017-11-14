@@ -1,0 +1,70 @@
+.min {
+  min-width: 1100px;
+  overflow-x: hidden;
+}
+
+#hotBrand {
+  box-sizing: border-box;
+  background-color: #F9F9F9;
+  height: 385px;
+  padding-top: 15px;
+}
+
+#hotBrand .Brand {
+  box-sizing: border-box;
+  height: 105px;
+  padding: 0 10px;
+  background-color: #fff;
+}
+
+#hotBrand .Brand h3 {
+  display: inline-block;
+  width: 120px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 95px;
+  font-weight: bold;
+}
+
+#hotBrand .Brand a img {
+  height: 95px;
+  width: 110px;
+}
+
+#hotBrand .advertise {
+  clear: both;
+  padding-top: 15px;
+}
+
+#merchandise {
+  background-color: #F9F9F9;
+}
+
+#merchandise h3 {
+  padding: 15px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+#merchandise h3 span {
+  color: #999999;
+  font-size: 18px;
+  margin-left: 20px;
+  font-weight: normal;
+}
+
+#merchandise .recommend ul {
+  border-top: 1px solid #E5E5E5;
+  border-left: 1px solid #E5E5E5;
+  background-color: #fff;
+}
+
+#merchandise .recommend ul li {
+  float: left;
+  box-sizing: border-box;
+  width: 219.8px;
+  height: 335px;
+  border-right: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
+}
