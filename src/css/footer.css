@@ -118,6 +118,22 @@ footer .foot_b ul li:last-child a {
   border-right: 0 none;
 }
 
+footer .foot_b .xukez {
+  padding: 10px 0;
+  font-size: 12px;
+  color: #999;
+  text-align: center;
+}
+
+footer .foot_b .xukez span {
+  border-right: 1px solid #ddd;
+  padding: 0 8px;
+}
+
+footer .foot_b .xukez span:last-child {
+  border-right: 0 none;
+}
+
 footer .foot_b ol li {
   float: left;
   line-height: 23px;
@@ -135,8 +151,19 @@ footer .foot_b ol li:last-child span {
 }
 
 footer .foot_b p {
-  padding-left: 330px;
+  text-align: center;
   line-height: 23px;
   font-size: 12px;
   color: #999999;
+}
+
+footer .foot_b .hezuo {
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer .foot_b .hezuo img {
+  height: 30px;
+  width: 100px;
+  margin: 0 5px;
 }
