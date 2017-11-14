@@ -117,4 +117,120 @@ $backgroundcolor:#F9F9F9;
             }
         }
     }
+    .todaySale{
+        .mold{
+            background-color:#fff;
+            margin-bottom:10px;
+            box-sizing:border-box;
+            padding:10px;
+            >a{
+                display:inline-block;
+                img{
+                    width:730px;
+                    height:375px;
+                }
+            }
+            .maidian{
+                box-sizing:border-box;
+                float:right;
+                width:350px;
+                padding:0 10px;
+                li{
+                    border-bottom:1px dashed #eee;
+                    padding:10px;
+                    a{
+                        display:block;
+                        img{
+                            height:85px;
+                            width:90px;
+                        }
+                        .part{
+                            float:right;
+                            width:185px;
+                            font-size:13px;
+                            color:#000;
+                            line-height:21px;
+                            padding:5px 0;
+                            p{
+                                padding-bottom:5px;
+                            }
+                            span{
+                                text-decoration:line-through;
+                                margin-right:10px;
+                                &:nth-child(1){
+                                    color:#FA4B9B;
+                                    text-decoration:none;
+                                    font-size:20px;
+                                }
+                            }
+                        }
+                    }
+                    &:last-child{
+                        border-bottom:1px none;
+                    }
+                }
+            }
+        }
+    }
+    .bsetproduct{
+        padding:10px 0;
+        .trademark{
+            background-color:#fff;
+            padding:10px;
+            .trade_t{
+                box-sizing:border-box;
+                height:118px;
+                padding:10px;
+                a{
+                    display:inline-block;
+                    font-size:18px;
+                    text-align:center;
+                    height:80px;
+                    line-height:80px;
+                    img{
+                        box-sizing:border-box;
+                        height:80px;
+                        width:80px;
+                        border:1px solid #ccc;
+                        border-radius:10px;
+                    }
+                    span{
+                        margin-left:20px;
+                    }
+                    i{
+                        border:1px solid #FAA8CD;
+                        border-radius:19px;
+                        padding:10px 15px;
+                    }
+                }
+            }
+            ul{
+                li{
+                    float:left;
+                    width:216px;
+                    text-align:center;
+                    a{
+                        display:block;
+                        p{
+                            font-size:14px;
+                            line-height:24px;
+                            &:nth-child(3){
+                                font-size:20px;
+                                color:#FAA8CD;
+                                span{
+                                    color:#ccc;
+                                    font-size:14px;
+                                    text-decoration:line-through;
+                                    margin-left:10px;
+                                }
+                            }
+                            &:nth-child(2){
+                                height:50px;
+                            }
+                        }
+                    }
+                }
+            }
+        }   
+    }
 }
