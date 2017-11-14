@@ -68,3 +68,69 @@
   border-right: 1px solid #E5E5E5;
   border-bottom: 1px solid #E5E5E5;
 }
+
+#merchandise .recommend ul li a {
+  display: block;
+}
+
+#merchandise .recommend ul li a img {
+  height: 219px;
+  width: 219px;
+}
+
+#merchandise .recommend ul li a .details {
+  padding: 8px;
+}
+
+#merchandise .recommend ul li a .details p {
+  font-size: 13px;
+  line-height: 21px;
+  color: #000;
+}
+
+#merchandise .recommend ul li a .details p:nth-child(1) {
+  font-weight: bold;
+}
+
+#merchandise .recommend ul li a .details .price {
+  padding: 15px 0;
+  float: left;
+  font-size: 13px;
+  line-height: 21px;
+}
+
+#merchandise .recommend ul li a .details .price span {
+  color: #000;
+}
+
+#merchandise .recommend ul li a .details .price span i {
+  text-decoration: line-through;
+}
+
+#merchandise .recommend ul li a .details .price span:nth-child(1) {
+  color: #FF4A49;
+}
+
+#merchandise .recommend ul li a .details .price span:nth-child(1) i {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+#merchandise .recommend ul li a .details .pintuan {
+  float: right;
+  padding: 15px 0;
+  font-size: 13px;
+  line-height: 23px;
+  text-align: center;
+}
+
+#merchandise .recommend ul li a .details .pintuan span {
+  color: #000;
+  padding: 4px;
+}
+
+#merchandise .recommend ul li a .details .pintuan span.btn {
+  background-color: #FF4A49;
+  color: #fff;
+  border-radius: 20px;
+}

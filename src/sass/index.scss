@@ -60,7 +60,60 @@ $backgroundcolor:#F9F9F9;
                 height:335px;
                 border-right:1px solid #E5E5E5;
                 border-bottom:1px solid #E5E5E5;
+                a{
+                    display:block;
+                    img{
+                        height:219px;
+                        width:219px;
+                    }
+                    .details{
+                        padding:8px;
+                        p{
+                            font-size:13px;
+                            line-height:21px;
+                            color:#000;
+                            &:nth-child(1){
+                                font-weight:bold;
 
+                            }
+                        }
+                        .price{
+                            padding:15px 0;
+                            float:left;
+                            font-size:13px;
+                            line-height:21px;
+                            span{
+                                color:#000;
+                                i{
+                                    text-decoration:line-through;
+                                }
+                                &:nth-child(1){
+                                    color:#FF4A49;
+                                    i{
+                                        font-size:20px;
+                                        text-decoration:none;
+                                    }
+                                }
+                            }
+                        }
+                        .pintuan{
+                            float:right;
+                            padding:15px 0;
+                            font-size:13px;
+                            line-height:23px;
+                            text-align:center;
+                            span{
+                                color:#000;
+                                padding:4px;
+                                &.btn{
+                                    background-color:#FF4A49;
+                                    color:#fff;
+                                    border-radius:20px;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
