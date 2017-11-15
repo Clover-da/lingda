@@ -1,0 +1,324 @@
+#spxq h5 {
+  font-size: 14px;
+  line-height: 28px;
+}
+
+#spxq h5 a:hover {
+  color: #FF3893;
+}
+
+#spxq .xinx {
+  padding-bottom: 20px;
+}
+
+#spxq .xinx .xx_l {
+  margin: 20px;
+  width: 403px;
+  border: 1px solid #ccc;
+}
+
+#spxq .xinx .xx_l img {
+  width: 400px;
+  height: 400px;
+}
+
+#spxq .xinx .xx_r {
+  width: 600px;
+  padding: 20px;
+}
+
+#spxq .xinx .xx_r > p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+#spxq .xinx .xx_r > p span {
+  color: #ccc;
+}
+
+#spxq .xinx .xx_r > p span:nth-child(2) {
+  float: right;
+}
+
+#spxq .xinx .xx_r > p span:nth-child(2) a {
+  font-size: 22px;
+  color: green;
+}
+
+#spxq .xinx .xx_r > p span:nth-child(2) a:nth-child(2) {
+  color: #F43499;
+}
+
+#spxq .xinx .xx_r > p:nth-child(3) {
+  line-height: 18px;
+  margin-top: 20px;
+}
+
+#spxq .xinx .xx_r .xq_sj {
+  line-height: 28px;
+  font-size: 18px;
+}
+
+#spxq .xinx .xx_r .price {
+  margin: 20px 0;
+  background-color: #FFF9FD;
+  padding: 0 15px;
+}
+
+#spxq .xinx .xx_r .price > p {
+  font-size: 14px;
+  line-height: 40px;
+}
+
+#spxq .xinx .xx_r .price > p span:nth-child(1) {
+  display: inline-block;
+  width: 95px;
+}
+
+#spxq .xinx .xx_r .price > p span:nth-child(2) {
+  font-size: 20px;
+  color: #F43499;
+}
+
+#spxq .xinx .xx_r .price > p span:nth-child(2) i {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #000;
+  text-decoration: line-through;
+}
+
+#spxq .xinx .xx_r .price > p:nth-child(2) span:nth-child(2) {
+  font-size: 12px;
+  padding: 5px;
+  margin-right: 10px;
+  background-color: #FC6C80;
+  color: #fff;
+}
+
+#spxq .xinx .xx_r .price > p:nth-child(2) span:nth-child(3) {
+  color: #FF3B93;
+}
+
+#spxq .xinx .xx_r .price > p:nth-child(3) span:nth-child(2) {
+  font-size: 14px;
+  color: #FF3B93;
+}
+
+#spxq .xinx .xx_r ul {
+  height: 71px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+#spxq .xinx .xx_r ul li {
+  float: left;
+  margin-right: 30px;
+  font-size: 14px;
+}
+
+#spxq .xinx .xx_r ul li span {
+  display: inline-block;
+  margin-right: 20px;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #ccc;
+  position: relative;
+  cursor: pointer;
+}
+
+#spxq .xinx .xx_r ul li span i {
+  display: none;
+  width: 14px;
+  height: 14px;
+  background: url("../img/details_gou.png") no-repeat;
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+}
+
+#spxq .xinx .xx_r ul li span img {
+  width: 42px;
+  height: 43px;
+}
+
+#spxq .xinx .xx_r ul li span .active {
+  border: 2px solid #f43499;
+}
+
+#spxq .xinx .xx_r dl {
+  height: 35px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+#spxq .xinx .xx_r dl dt {
+  float: left;
+  margin-right: 30px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+#spxq .xinx .xx_r dl dt.sl_tj {
+  border: 1px solid #ccc;
+}
+
+#spxq .xinx .xx_r dl dt.sl_tj i {
+  display: inline-block;
+  width: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#spxq .xinx .xx_r dl dt.sl_tj i:nth-child(1), #spxq .xinx .xx_r dl dt.sl_tj i:nth-child(3) {
+  background-color: #ccc;
+}
+
+#spxq .xinx .xx_r .pingfen {
+  height: 24px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+#spxq .xinx .xx_r .pingfen span {
+  margin-right: 30px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+#spxq .xinx .xx_r .pingfen span:nth-child(2) {
+  display: inline-block;
+  width: 80px;
+  height: 13px;
+  background: url("../img/details_xx.png");
+}
+
+#spxq .xinx .xx_r .pingfen span:nth-child(3) {
+  font-size: 13px;
+}
+
+#spxq .xinx .xx_r .pingfen span:nth-child(3) i {
+  color: #f43499;
+}
+
+#spxq .xinx .xx_r .gwc_dj {
+  padding: 10px 0;
+  width: 350px;
+}
+
+#spxq .xinx .xx_r .gwc_dj span:nth-child(1) {
+  display: inline-block;
+  height: 55px;
+  width: 220px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  background-color: #f43499;
+  line-height: 55px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+#spxq .xinx .xx_r .gwc_dj span:nth-child(2) {
+  display: block;
+  box-sizing: border-box;
+  height: 55px;
+  text-align: center;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+#spxq .xinx .xx_r .gwc_dj span:nth-child(2) i {
+  font-size: 20px;
+  color: #f43499;
+}
+
+#spxq .xinx .xx_r .other {
+  font-size: 12px;
+  line-height: 30px;
+}
+
+#spxq .xinx .xx_r .other i {
+  font-size: 18px;
+  line-height: 30px;
+  color: #f43499;
+  margin-right: 5px;
+}
+
+#pinlun .pl_t {
+  padding-bottom: 20px;
+}
+
+#pinlun .pl_t ul {
+  background-color: #f43499;
+  width: 860px;
+}
+
+#pinlun .pl_t ul li {
+  float: left;
+  height: 45px;
+  font-size: 14px;
+  line-height: 45px;
+  padding: 0 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+#pinlun .pl_t ul li.active_dj {
+  background-color: #ec0871;
+}
+
+#pinlun .pl_t.movefixed {
+  position: fixed;
+  top: 0;
+  left: 81.5px;
+}
+
+#pinlun .pl_b {
+  box-sizing: border-box;
+  width: 860px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  position: relative;
+}
+
+#pinlun .pl_b .youshi {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 20px;
+}
+
+#pinlun .pl_b .youshi div {
+  margin-top: 10px;
+}
+
+#pinlun .pl_b .youshi div a {
+  display: block;
+  height: 58px;
+  line-height: 58px;
+  text-align: center;
+  color: #fff;
+  background-color: #9a8382;
+  font-size: 22px;
+}
+
+#pinlun .pl_b .zixun {
+  display: none;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#pinlun .pl_b .zixun dl {
+  padding: 0 20px;
+}
+
+#pinlun .pl_b .zixun dl dt {
+  font-weight: bold;
+  line-height: 28px;
+  padding-top: 10px;
+}
