@@ -67,6 +67,7 @@
   height: 335px;
   border-right: 1px solid #E5E5E5;
   border-bottom: 1px solid #E5E5E5;
+  position: relative;
 }
 
 #merchandise .recommend ul li a {
@@ -74,7 +75,7 @@
 }
 
 #merchandise .recommend ul li a img {
-  height: 219px;
+  height: 199px;
   width: 219px;
 }
 
@@ -88,13 +89,11 @@
   color: #000;
 }
 
-#merchandise .recommend ul li a .details p:nth-child(1) {
-  font-weight: bold;
-}
-
 #merchandise .recommend ul li a .details .price {
   padding: 15px 0;
-  float: left;
+  position: absolute;
+  left: 10px;
+  bottom: 0;
   font-size: 13px;
   line-height: 21px;
 }
@@ -114,25 +113,6 @@
 #merchandise .recommend ul li a .details .price span:nth-child(1) i {
   font-size: 20px;
   text-decoration: none;
-}
-
-#merchandise .recommend ul li a .details .pintuan {
-  float: right;
-  padding: 15px 0;
-  font-size: 13px;
-  line-height: 23px;
-  text-align: center;
-}
-
-#merchandise .recommend ul li a .details .pintuan span {
-  color: #000;
-  padding: 4px;
-}
-
-#merchandise .recommend ul li a .details .pintuan span.btn {
-  background-color: #FF4A49;
-  color: #fff;
-  border-radius: 20px;
 }
 
 #merchandise .todaySale .mold {
@@ -168,7 +148,7 @@
 }
 
 #merchandise .todaySale .mold .maidian li a img {
-  height: 85px;
+  height: 100px;
   width: 90px;
 }
 
@@ -182,7 +162,11 @@
 }
 
 #merchandise .todaySale .mold .maidian li a .part p {
-  padding-bottom: 5px;
+  padding-bottom: 10px;
+}
+
+#merchandise .todaySale .mold .maidian li a .part p:nth-child(2) {
+  padding: 10px 0;
 }
 
 #merchandise .todaySale .mold .maidian li a .part span {
@@ -207,6 +191,7 @@
 #merchandise .bsetproduct .trademark {
   background-color: #fff;
   padding: 10px;
+  margin-bottom: 10px;
 }
 
 #merchandise .bsetproduct .trademark .trade_t {
@@ -251,6 +236,11 @@
   display: block;
 }
 
+#merchandise .bsetproduct .trademark ul li a img {
+  height: 196px;
+  width: 196px;
+}
+
 #merchandise .bsetproduct .trademark ul li a p {
   font-size: 14px;
   line-height: 24px;
@@ -269,5 +259,5 @@
 }
 
 #merchandise .bsetproduct .trademark ul li a p:nth-child(2) {
-  height: 50px;
+  height: 90px;
 }

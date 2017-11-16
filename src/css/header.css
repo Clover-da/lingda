@@ -25,23 +25,23 @@ header .header_pld a:hover {
   color: #FA4B9B;
 }
 
-header .header_pld ul {
+header .header_pld ol {
   float: right;
   padding-right: 5px;
 }
 
-header .header_pld ul li {
+header .header_pld ol li {
   box-sizing: border-box;
   float: left;
   height: 29px;
   padding-top: 2px;
 }
 
-header .header_pld ul li a {
+header .header_pld ol li a {
   padding: 0 10px 0 10px;
 }
 
-header .header_pld ul li:nth-child(2) a {
+header .header_pld ol li:nth-child(2) a {
   border-right: 1px solid #D7D7D7;
   padding: 0 13px 0 15px;
 }
@@ -91,28 +91,28 @@ header .header_pld ul li:nth-child(2) a {
   color: #fff;
 }
 
-.search_pld .search .search_l ul li {
+.search_pld .search .search_l dl dt {
   float: left;
   padding-top: 8px;
 }
 
-.search_pld .search .search_l ul li a {
+.search_pld .search .search_l dl dt a {
   padding: 0 14px 0 12px;
   border-right: 1px solid #D7D7D7;
   color: #666666;
   font-size: 12px;
 }
 
-.search_pld .search .search_l ul li a:hover {
+.search_pld .search .search_l dl dt a:hover {
   color: #FA4B9B;
 }
 
-.search_pld .search .search_l ul li:last-child a {
+.search_pld .search .search_l dl dt:last-child a {
   border-right: 0 none;
   color: #FA4B9B;
 }
 
-.search_pld .search .search_l ul li:nth-child(2) a {
+.search_pld .search .search_l dl dt:nth-child(2) a {
   color: #FA4B9B;
 }
 
@@ -180,13 +180,14 @@ nav .all dl {
 
 nav .all dl dt {
   box-sizing: border-box;
+  width: 230px;
   font-size: 14px;
   padding-left: 10px;
   padding-bottom: 4px;
   border-bottom: 1px dashed #D1D1D1;
   position: relative;
   background-color: rgba(255, 255, 255, 0.9);
-  z-index: 100px;
+  z-index: 100;
 }
 
 nav .all dl dt h5 {
@@ -226,24 +227,37 @@ nav .all dl dt:hover {
   padding-left: 7px;
   background-color: #fff;
   margin-top: -1px;
+  width: 230px;
 }
 
 nav .all dl dt:last-child {
   border-bottom: 1px dashed #FFF;
 }
 
-nav ul {
+nav .all dl dt .san_nav {
+  display: none;
+  box-sizing: border-box;
+  position: absolute;
+  left: 230px;
+  top: 0;
+  height: 400px;
+  width: 800px;
+  background-color: #ccc;
+  z-index: 103px;
+}
+
+nav ol {
   float: left;
 }
 
-nav ul li {
+nav ol li {
   float: left;
   font-size: 17px;
   line-height: 46px;
   position: relative;
 }
 
-nav ul li a {
+nav ol li a {
   display: block;
   color: #fff;
   height: 46px;
@@ -251,27 +265,27 @@ nav ul li a {
   position: relative;
 }
 
-nav ul li a:hover {
+nav ol li a:hover {
   background: #EC0971;
   color: #fff;
 }
 
-nav ul li a:hover i {
+nav ol li a:hover i {
   transform: rotate(-180deg);
 }
 
-nav ul li a i {
+nav ol li a i {
   color: #fff;
   position: absolute;
   margin-left: 5px;
   transition: transform 0.3s ease;
 }
 
-nav ul li:nth-child(4) {
+nav ol li:nth-child(4) {
   width: 140px;
 }
 
-nav ul li dl {
+nav ol li dl {
   background-color: #fff;
   display: none;
   position: absolute;
@@ -281,18 +295,18 @@ nav ul li dl {
   width: 140px;
 }
 
-nav ul li dl dt {
+nav ol li dl dt {
   border-bottom: 1px dashed #DDDDDD;
 }
 
-nav ul li dl dt a {
+nav ol li dl dt a {
   color: #666695;
 }
 
-nav ul li dl dt:last-child {
+nav ol li dl dt:last-child {
   border-bottom: 0 none;
 }
 
-nav ul li:hover dl {
+nav ol li:hover dl {
   display: block;
 }

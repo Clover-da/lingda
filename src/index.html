@@ -5,6 +5,8 @@
     <title>蜜芽-首页</title>
     <link rel="stylesheet" type="text/css" href="css/base.css" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/header.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
     <!-- jQ插件 -->
     <script type="text/javascript" src="lib/JQ/jquery-3.2.1.js"></script>
     <!-- 轮播图插件 -->
@@ -37,7 +39,7 @@
         <div class="container">
             <div class="recommend">
                 <h3>为你推荐<span>千万妈妈 精明之选</span></h3>
-                <ul class="clearfix">
+                <!-- <ul class="clearfix">
                     <li>
                         <a href="#">
                             <img src="img/idx_reom1.jpg" alt="" />
@@ -45,12 +47,8 @@
                                 <p>格朗GL1秒快速测温耳温枪</p>
                                 <p>红外线感应控头更精准</p>
                                 <div class="price">
-                                    <span>拼团价：￥<i>59</i></span><br />
-                                    <span>市场价：￥<i>219.00</i></span>
-                                </div>
-                                <div class="pintuan">
-                                    <span class="btn">去拼团</span><br />
-                                    <span>4万人已拼团</span>
+                                    <span>现价：￥<i>59</i></span><br />
+                                    <span>原价：￥<i>219.00</i></span>
                                 </div>
                             </div>
                         </a>
@@ -64,13 +62,13 @@
                     <li></li>
                     <li></li>
                     <li></li>
-                </ul>
+                </ul> -->
             </div>
             <div class="todaySale">
                 <h3>今日特卖<span>每天10点上新</span></h3>
-                <div class="mold clearfix">
+                <div class="mold mold1 clearfix">
                     <a href="#"><img src="img/idx_mold1.jpg" /></a>
-                    <ul class="maidian">
+                    <!-- <ul class="maidian">
                         <li>
                             <a href="#" class="clearfix">
                                 <img src="img/idx_maidian1.jpg" height="200" width="217" alt="" />
@@ -98,12 +96,18 @@
                                 </div>
                             </a>
                         </li>
-                    </ul>
+                    </ul> -->
+                </div>
+                <div class="mold mold2 clearfix">
+                    <a href="#"><img src="img/idx_mold2.jpg" /></a>
+                </div>
+                <div class="mold mold3 clearfix">
+                    <a href="#"><img src="img/idx_mold3.jpg" /></a>
                 </div>
             </div>
             <div class="bsetproduct">
                 <h3>大牌尖货<span>全世界的品牌 优惠特卖</span></h3>
-                <div class="trademark">
+                <div class="trademark trad1">
                     <div class="trade_t clearfix">
                         <a href="#" class="fl">
                             <img src="img/idx_hotBrand1.jpg" />
@@ -111,7 +115,7 @@
                         </a>
                         <a href="#" class="fr"><i>正在参加拼团活动&gt;</i></a>
                     </div>
-                    <ul class="clearfix">
+                    <!-- <ul class="clearfix">
                         <li>
                             <a href="#">
                                 <img src="img/idex_trademark1.jpg"/>
@@ -119,41 +123,31 @@
                                 <p>￥124.5<span>￥259</span> </p>
                             </a>
                         </li>
-                        <li>
-                            <a href="#">
-                                <img src="img/idex_trademark1.jpg"/>
-                                <p>小怪兽开衫卫衣套</p>
-                                <p>￥124.5<span>￥259</span> </p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="img/idex_trademark1.jpg"/>
-                                <p>小怪兽开衫卫衣套</p>
-                                <p>￥124.5<span>￥259</span> </p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="img/idex_trademark1.jpg"/>
-                                <p>小怪兽开衫卫衣套</p>
-                                <p>￥124.5<span>￥259</span> </p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="img/idex_trademark1.jpg"/>
-                                <p>小怪兽开衫卫衣套</p>
-                                <p>￥124.5<span>￥259</span> </p>
-                            </a>
-                        </li>
-                    </ul>
+                    </ul> -->
+                </div>
+                <div class="trademark trad2">
+                    <div class="trade_t clearfix">
+                        <a href="#" class="fl">
+                            <img src="img/idx_hotBrand1.jpg" />
+                             <span>歌歌宝贝 GG.baby</span>
+                        </a>
+                        <a href="#" class="fr"><i>正在参加拼团活动&gt;</i></a>
+                    </div>
+                </div>
+                <div class="trademark trad3">
+                    <div class="trade_t clearfix">
+                        <a href="#" class="fl">
+                            <img src="img/idx_hotBrand1.jpg" />
+                             <span>歌歌宝贝 GG.baby</span>
+                        </a>
+                        <a href="#" class="fr"><i>正在参加拼团活动&gt;</i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div id="footer_pld"></div>
- </div>
+</div>
     <!-- 链接头部和尾部的内容 -->
     <script>
         (function($){
@@ -162,6 +156,7 @@
         })(jQuery);
     </script>
     <!-- 轮播图 -->
+    
     <script>
         (function($){
             $('#banner_pld .container').pldCarousel({
@@ -173,6 +168,8 @@
             })
         })(jQuery);
     </script>
+    <script src="js/index.js"></script>
+
     
 </body>
 </html>
