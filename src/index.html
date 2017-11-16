@@ -8,10 +8,10 @@
     <link rel="stylesheet" type="text/css" href="css/header.css" />
     <link rel="stylesheet" type="text/css" href="css/footer.css" />
     <!-- jQ插件 -->
-    <script type="text/javascript" src="lib/JQ/jquery-3.2.1.js"></script>
+    <!-- <script type="text/javascript" src="lib/JQ/jquery-3.2.1.js"></script> -->
     <!-- 轮播图插件 -->
-    <link rel="stylesheet" type="text/css" href="lib/carousel/jQuery.pldCarousel.css" />
-    <script type="text/javascript" src="lib/carousel/jQuery.pldCarousel.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="lib/carousel/jQuery.pldCarousel.css" />
+    <script type="text/javascript" src="lib/carousel/jQuery.pldCarousel.js"></script> -->
 </head>
 <body>
 <div class="min">
@@ -149,15 +149,15 @@
     <div id="footer_pld"></div>
 </div>
     <!-- 链接头部和尾部的内容 -->
-    <script>
+    <!-- <script>
         (function($){
             $('#header_pld').load('html/header.html');
             $('#footer_pld').load('html/footer.html');
         })(jQuery);
-    </script>
+    </script> -->
     <!-- 轮播图 -->
     
-    <script>
+   <!--  <script>
         (function($){
             $('#banner_pld .container').pldCarousel({
                 imgs:["img/banner1.jpg","img/banner2.jpg","img/banner3.jpg","img/banner4.jpg","img/banner5.jpg","img/banner6.jpg","img/banner7.jpg"],
@@ -167,8 +167,8 @@
                 buttons:false,
             })
         })(jQuery);
-    </script>
-    <script src="js/index.js"></script>
+    </script> -->
+    <script src="js/require.js" data-main="js/index"></script>
 
     
 </body>

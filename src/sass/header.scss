@@ -179,7 +179,7 @@ nav{
                     }
                     
                 }
-                p{
+                >p{
                     font-size:13px;
                     line-height:20px;
                     a{
@@ -204,21 +204,39 @@ nav{
                     padding-left:7px;
                     background-color:#fff;
                     margin-top:-1px;
-                    width:230px;
+                    width:232px;
                 }
                 &:last-child{
                    border-bottom:1px dashed #FFF; 
                 }
                 .san_nav{
-                    display:none;
+                    // display:none;
                     box-sizing:border-box;
                     position:absolute;
                     left:230px;
                     top:0;
                     height:400px;
                     width:800px;
-                    background-color:#ccc;
+                    border:1px solid #ccc;
+                    background-color:#fff;
                     z-index:103px;
+                    padding:20px;
+                    ul{
+                        height:30px;
+                        font-size:14px;
+                        line-height:30px;
+                        text-align:center;
+                        color:#000;
+                        border-bottom:1px solid #ccc;
+                        h5{
+                            float:left;
+                            width:100px;
+                        }
+                        li{
+                            float:left;
+                            padding:0 20px;
+                        }
+                    }
                 }
             }
 

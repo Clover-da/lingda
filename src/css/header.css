@@ -199,17 +199,17 @@ nav .all dl dt h5 a {
   margin-right: 4px;
 }
 
-nav .all dl dt p {
+nav .all dl dt > p {
   font-size: 13px;
   line-height: 20px;
 }
 
-nav .all dl dt p a {
+nav .all dl dt > p a {
   color: #000;
   margin-right: 4px;
 }
 
-nav .all dl dt p a:hover {
+nav .all dl dt > p a:hover {
   color: #FF3893;
 }
 
@@ -227,7 +227,7 @@ nav .all dl dt:hover {
   padding-left: 7px;
   background-color: #fff;
   margin-top: -1px;
-  width: 230px;
+  width: 232px;
 }
 
 nav .all dl dt:last-child {
@@ -235,15 +235,35 @@ nav .all dl dt:last-child {
 }
 
 nav .all dl dt .san_nav {
-  display: none;
   box-sizing: border-box;
   position: absolute;
   left: 230px;
   top: 0;
   height: 400px;
   width: 800px;
-  background-color: #ccc;
+  border: 1px solid #ccc;
+  background-color: #fff;
   z-index: 103px;
+  padding: 20px;
+}
+
+nav .all dl dt .san_nav ul {
+  height: 30px;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: #000;
+  border-bottom: 1px solid #ccc;
+}
+
+nav .all dl dt .san_nav ul h5 {
+  float: left;
+  width: 100px;
+}
+
+nav .all dl dt .san_nav ul li {
+  float: left;
+  padding: 0 20px;
 }
 
 nav ol {
