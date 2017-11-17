@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-11-16 10:48:18
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-11-16 20:32:32
+* @Last Modified time: 2017-11-17 10:07:43
 */
 
 //首页
@@ -23,7 +23,7 @@ require(['config'],function(){
 
         $.ajax({
             type:'get',
-            url:'http://localhost:168/lib/index.php',
+            url:'http://localhost:168/api/index.php',
             success:function(data){
                 var res = JSON.parse(data);
                 //为你推荐板块
