@@ -3,7 +3,7 @@
  * @Author: Marte
  * @Date:   2017-11-17 09:20:26
  * @Last Modified by:   Marte
- * @Last Modified time: 2017-11-17 16:43:32
+ * @Last Modified time: 2017-11-17 16:59:16
  */
     
     // 引入其他php文件
@@ -18,18 +18,20 @@
 
 
     // 编写sql语句
-    $sql = "select * from goods";
+    $sql = "select * from goods where";
 
     if($type){
-        $sql .= " where type='$type'";
-        if($brand){
-            $sql .= " and brand='$brand'";
-        }
-    }else if($brand){
-        $sql .= " where brand='$brand'";
-    }else if($originplace){
-        $sql .= " where originplace='$originplace'";
+        $sql .= " type='$type' and";
     }
+    if($brand){
+        $sql .= " brand='$brand' and";
+    }
+
+    if($originplace){
+        $sql .= " originplace='$originplace' and";
+    }
+
+    $sql .= " 1=1";
 
     // 执行sql语句
     // query()

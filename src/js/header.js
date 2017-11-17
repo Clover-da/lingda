@@ -1,5 +1,5 @@
 ;(function($){
-    var $nav_dt= $('.all dl dt');console.log($nav_dt);
+    var $nav_dt= $('.all dl dt');
     $nav_dt.on('mouseover',function(e){
         var tagname = ['dt','h5','p','span','a']
         if(tagname.indexOf(e.target.tagName.toLowerCase())>0){
@@ -25,6 +25,6 @@
             })
         }
     }).on('mouseleave',function(e){
-        $('.san_nav').remove();
+            $('.san_nav').remove();
     })
 })(jQuery);
