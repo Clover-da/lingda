@@ -14,6 +14,8 @@ require(['config'],function(){
                         $('.all dl').hide();
                     },500)   
                 })
+
+                fly($('.cart'),$('.num'));
             });
         });
         $('#footer_pld').load('footer.html');
@@ -83,5 +85,56 @@ require(['config'],function(){
             }
             e.preventDefault();
         })
+
+        //飞入购物车
+        function fly(e1,e2){
+            var $fly_btn = $('.fly_gwc');
+            var $cart = e1;
+            var $num = e2;
+
+            $fly_btn.on('click',function(){
+                //获取图片,复制图片,放在原来的图片的上面改变left和top值
+                var $img = $('.xx_l').children('img');
+                var $copy = $img.clone();
+                //写入到原来的地方
+                $('.xx_l').append($copy);
+                $copy.css({
+                    position:'absolute',
+                    left:0,
+                    top:0,
+                })
+
+                console.log($cart);
+                // 获取需要飞到的目标值
+                $copy.animate({
+                    left:$cart.offset().left-150,
+                    top:-($('.xx_l').offset().top-$cart.offset().top-$cart.height()),
+                    width:20,
+                    height:20,
+                },function(){
+                    $copy.remove();
+                })
+            })
+        }
     })
 })
+
+
+
+// //获取图片,复制图片,放在原来的图片的上面改变left和top值
+//                 var $img = $imgbox.children('img');
+//                 var $copy = $img.clone();
+//                 //写入到原来的地方
+//                 $imgbox.append($copy);
+//                 $copy.css({
+//                     left:0,
+//                     top:0,
+//                 })
+//                 //获取需要飞到的目标值
+//                 $copy.animate({
+//                     left:$cart.offset().left,
+//                     top:-($imgbox.offset().top-$cart.offset().top-$cart.height()),
+//                     width:30,
+//                 },function(){
+//                     $copy.remove();
+//                 })

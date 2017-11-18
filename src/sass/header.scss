@@ -134,6 +134,18 @@ header{
                 line-height:34px;
                 font-size:14px;
             }
+            .num{
+                float:left;
+                width:20px;
+                height:20px;
+                background-color:#f43499;
+                text-align:center;
+                color:#fff;
+                border-radius:50%;
+                position:absolute;
+                left:20px;
+                top:-20px;
+            }
         }
     }
 }

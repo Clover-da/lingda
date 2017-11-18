@@ -149,6 +149,19 @@ header .header_pld ol li:nth-child(2) a {
   font-size: 14px;
 }
 
+.search_pld .search .cart .num {
+  float: left;
+  width: 20px;
+  height: 20px;
+  background-color: #f43499;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 20px;
+  top: -20px;
+}
+
 nav {
   height: 46px;
   background-color: #FC3993;
