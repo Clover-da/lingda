@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-11-17 09:37:24
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-11-18 11:39:45
+* @Last Modified time: 2017-11-18 17:25:11
 */
 
 require(['config'],function(){
@@ -124,6 +124,10 @@ require(['config'],function(){
             $fenye.html('');
             $fenye.append($ul_page);
 
+            $goodsul.find('li').on('click','a',function(){
+                var id = this.dataset.id;
+                location.href = '../html/details.html?id='+id;
+            })
             
 
             //分页切换
