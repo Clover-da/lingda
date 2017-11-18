@@ -27,14 +27,14 @@
   bottom: 0;
 }
 
-.signIn .signIn_t .signIn_r form {
+.signIn .signIn_t .signIn_r .form {
   box-sizing: border-box;
   width: 350px;
   border: 1px solid #eee;
   padding: 0 20px;
 }
 
-.signIn .signIn_t .signIn_r form p {
+.signIn .signIn_t .signIn_r .form p {
   box-sizing: border-box;
   height: 40px;
   width: 305px;
@@ -43,33 +43,33 @@
   font-size: 16px;
 }
 
-.signIn .signIn_t .signIn_r form p.p1 {
+.signIn .signIn_t .signIn_r .form p.p1 {
   font-size: 20px;
   margin: 12px 0 22px 0;
 }
 
-.signIn .signIn_t .signIn_r form p.p1 span {
+.signIn .signIn_t .signIn_r .form p.p1 span {
   font-size: 13px;
 }
 
-.signIn .signIn_t .signIn_r form p.p1 span a:hover {
+.signIn .signIn_t .signIn_r .form p.p1 span a:hover {
   color: #F450A2;
 }
 
-.signIn .signIn_t .signIn_r form p.p2, .signIn .signIn_t .signIn_r form p.p5, .signIn .signIn_t .signIn_r form p.p6 {
+.signIn .signIn_t .signIn_r .form p.p2, .signIn .signIn_t .signIn_r .form p.p5, .signIn .signIn_t .signIn_r .form p.p6 {
   border: 1px solid #ccc;
   box-shadow: 1px 1px 1px 1px #eee inset;
   padding: 0 10px;
   position: relative;
 }
 
-.signIn .signIn_t .signIn_r form p.p2 i, .signIn .signIn_t .signIn_r form p.p5 i, .signIn .signIn_t .signIn_r form p.p6 i {
+.signIn .signIn_t .signIn_r .form p.p2 i, .signIn .signIn_t .signIn_r .form p.p5 i, .signIn .signIn_t .signIn_r .form p.p6 i {
   font-size: 20px;
   color: #CBCBCB;
   margin-right: 5px;
 }
 
-.signIn .signIn_t .signIn_r form p.p3 span {
+.signIn .signIn_t .signIn_r .form p.p3 span {
   display: inline-block;
   box-sizing: border-box;
   border: 1px solid #ccc;
@@ -82,7 +82,7 @@
   background-color: #FAFAFA;
 }
 
-.signIn .signIn_t .signIn_r form p.p4 input {
+.signIn .signIn_t .signIn_r .form p.p4 input {
   box-sizing: border-box;
   height: 40px;
   width: 144px;
@@ -92,7 +92,7 @@
   margin-right: 20px;
 }
 
-.signIn .signIn_t .signIn_r form p.p4 span {
+.signIn .signIn_t .signIn_r .form p.p4 span {
   display: inline-block;
   box-sizing: border-box;
   border: 1px solid #ccc;
@@ -105,20 +105,20 @@
   background-color: #FAFAFA;
 }
 
-.signIn .signIn_t .signIn_r form p.p7 {
+.signIn .signIn_t .signIn_r .form p.p7 {
   font-size: 14px;
   color: #A9A9A9;
 }
 
-.signIn .signIn_t .signIn_r form p.p7 a {
+.signIn .signIn_t .signIn_r .form p.p7 a {
   color: #F450A2;
 }
 
-.signIn .signIn_t .signIn_r form p.p7 a:hover {
+.signIn .signIn_t .signIn_r .form p.p7 a:hover {
   text-decoration: underline;
 }
 
-.signIn .signIn_t .signIn_r form p.p8 input {
+.signIn .signIn_t .signIn_r .form p.p8 input {
   height: 40px;
   width: 305px;
   background-color: #F450A2;
@@ -128,7 +128,7 @@
   font-size: 18px;
 }
 
-.signIn .signIn_t .signIn_r form .pwdyz {
+.signIn .signIn_t .signIn_r .form .pwdyz {
   height: 50px;
   width: 305px;
   background-color: #F450A2;
@@ -138,7 +138,7 @@
   line-height: 50px;
 }
 
-.signIn .signIn_t .signIn_r form .hidden {
+.signIn .signIn_t .signIn_r .form .hidden {
   display: none;
 }
 
