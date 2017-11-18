@@ -269,7 +269,7 @@ nav .all dl dt .san_nav ul {
   border-bottom: 1px solid #ccc;
 }
 
-nav .all dl dt .san_nav ul h5 {
+nav .all dl dt .san_nav ul h4 {
   float: left;
   width: 100px;
 }
@@ -277,6 +277,10 @@ nav .all dl dt .san_nav ul h5 {
 nav .all dl dt .san_nav ul li {
   float: left;
   padding: 0 20px;
+}
+
+nav .all dl dt .san_nav ul li i {
+  cursor: pointer;
 }
 
 nav ol {

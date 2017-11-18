@@ -240,13 +240,16 @@ nav{
                         text-align:center;
                         color:#000;
                         border-bottom:1px solid #ccc;
-                        h5{
+                        h4{
                             float:left;
                             width:100px;
                         }
                         li{
                             float:left;
                             padding:0 20px;
+                            i{
+                                cursor: pointer;
+                            }
                         }
                     }
                 }

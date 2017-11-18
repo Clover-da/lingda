@@ -116,25 +116,9 @@ require(['config'],function(){
                 })
             })
         }
+
+        //接受传来的参数
+        
     })
 })
 
-
-
-// //获取图片,复制图片,放在原来的图片的上面改变left和top值
-//                 var $img = $imgbox.children('img');
-//                 var $copy = $img.clone();
-//                 //写入到原来的地方
-//                 $imgbox.append($copy);
-//                 $copy.css({
-//                     left:0,
-//                     top:0,
-//                 })
-//                 //获取需要飞到的目标值
-//                 $copy.animate({
-//                     left:$cart.offset().left,
-//                     top:-($imgbox.offset().top-$cart.offset().top-$cart.height()),
-//                     width:30,
-//                 },function(){
-//                     $copy.remove();
-//                 })
