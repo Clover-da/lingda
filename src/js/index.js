@@ -2,14 +2,24 @@
 * @Author: Marte
 * @Date:   2017-11-16 10:48:18
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-11-18 17:03:51
+* @Last Modified time: 2017-11-18 17:17:06
 */
 
 //首页
 require(['config'],function(){
     require(['jquery','pldCarousel'],function($){
         $('#header_pld').load('html/header.html',function(){
-            require(['header']);
+            require(['header'],function(){
+                $('.header_pld').find('ol').children('li').find('a').on('click',function(e){
+                    console.log(e.target);
+                    if(e.target.innerHTML == '登陆'){
+                        e.target.href = '../html/logIn.html';
+                    }
+                    if(e.target.innerHTML == '免费注册'){
+                        e.target.href = '../html/signIn.html';
+                    }
+                })
+            });
         });
         $('#footer_pld').load('html/footer.html');
 
