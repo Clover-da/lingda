@@ -79,12 +79,15 @@
 }
 
 #spxq .xinx .xx_r .price > p span:nth-child(2) {
+  display: inline-block;
   font-size: 20px;
   color: #F43499;
 }
 
-#spxq .xinx .xx_r .price > p span:nth-child(2) i {
+#spxq .xinx .xx_r .price > p:nth-child(1) i.outprice_w {
+  display: inline-block;
   margin-left: 10px;
+  padding-left: 10px;
   font-size: 14px;
   color: #000;
   text-decoration: line-through;

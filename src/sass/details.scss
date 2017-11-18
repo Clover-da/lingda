@@ -62,14 +62,19 @@
                             width:95px;
                         }
                         &:nth-child(2){
+                            display:inline-block;
                             font-size:20px;
                             color:#F43499;
-                            i{
-                                margin-left:10px;
-                                font-size:14px;
-                                color:#000;
-                                text-decoration:line-through;
-                            }
+                        }
+                    }
+                    &:nth-child(1){
+                        i.outprice_w{
+                            display:inline-block;
+                            margin-left:10px;
+                            padding-left:10px;
+                            font-size:14px;
+                            color:#000;
+                            text-decoration:line-through;
                         }
                     }
                     &:nth-child(2){

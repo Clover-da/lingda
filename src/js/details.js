@@ -1,5 +1,5 @@
 require(['config'],function(){
-    require(['jquery','zoom'],function($){
+    require(['jquery','zoom','common'],function($,z,com){
         //加载头尾部
         $('#header_pld').load('header.html',function(){
             require(['header'],function(){
@@ -43,13 +43,43 @@ require(['config'],function(){
             }
         })
         
-        //放大镜
-        console.log($('.xx_l'));
-        $('.xx_l').EdZoom({
-            height:400,
-            width:400,
-            multiple:5,
+         //接受传来的参数
+        var str = location.search;
+        str = str.slice(1);
+        str = str.split('=');
+        var data = {};
+        data[str[0]] = str[1];
+        $.ajax({
+            type:'get',
+            url:'../api/details.php',
+            data:data,
+            success:function(data){
+                var res = JSON.parse(data);
+                console.log(res);
+                shuji(res);
+            }
         })
+
+        //数据生成HTML
+        var $img_w = $('.xx_l').children('img');console.log($img_w);
+        var $details_w = $('.xq_sj');
+        var $price_w = $('.price_w');
+        var $outprice_w = $('.outprice_w');
+        function shuji(res){
+            console.log(res[0].imgurl);
+            $img_w.attr('src','../'+res[0].imgurl);
+            $img_w.attr('data-id',res[0].id);
+            $details_w.html(res[0].details);
+            $price_w.html('￥'+res[0].price);
+            $outprice_w.html('￥'+res[0].outprice);
+
+            //放大镜
+            $('.xx_l').EdZoom({
+                height:400,
+                width:400,
+                multiple:5,
+            })
+        }
 
         //规格选择
         var $spec = $('.xx_r').find('ul');
@@ -86,6 +116,19 @@ require(['config'],function(){
             e.preventDefault();
         })
 
+
+
+        //生成cookie
+        //判断是否存在cookie
+        var datalist = com.Cookie.get('datalist');
+
+        if(!datalist){
+            datalist = [];
+        }else{
+            datalist = JSON.parse(datalist);
+        }
+
+
         //飞入购物车
         function fly(e1,e2){
             var $fly_btn = $('.fly_gwc');
@@ -114,11 +157,45 @@ require(['config'],function(){
                 },function(){
                     $copy.remove();
                 })
+
+                //生成cookie
+                // 判断当前商品是否存在cookie
+                var id = $img_w.attr('data-id');
+                var currentIdx;
+                var res = datalist.some(function(goods,idx){
+                    currentIdx = idx;
+                    return goods.id == id;
+                });
+                if(res){
+                    // 如果商品已经存在
+                    datalist[currentIdx].qty = $shul.find('span').html();
+                }else{
+                    // 否则添加商品
+                    var goods = {
+                        id:id,
+                        qty:$shul.find('span').html(),
+                        imgurl:$img_w.attr('src'),
+                        details:$details_w.html(),
+                        price:$price_w.html(),
+                        outprice:$outprice_w.html()
+
+                    }
+
+                    // 把当前商品添加到数组中
+                    datalist.push(goods);
+                }
+
+                $num.html(datalist.length);
+                //把商品信息写入cookie
+                // json字符串
+                // * JSON.stringify():把js对象（数组）转换成json字符串
+                // * JSON.parse():把json字符串转换成js对象（数组）
+                //{guid:g01,imgulr:'xxx.jpg'}
+                com.Cookie.set('datalist',JSON.stringify(datalist));
             })
         }
 
-        //接受传来的参数
-        
+
     })
 })
 
