@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-11-16 10:48:18
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-11-18 11:40:04
+* @Last Modified time: 2017-11-18 17:03:51
 */
 
 //首页
@@ -144,6 +144,13 @@ require(['config'],function(){
                 })
                 $pinpai3.html(html6);
                 $('.trad3').append($pinpai3);
+
+                //点击商品进入详情页
+                $('#merchandise').find('ul').on('click','a',function(){
+                    var id = this.dataset.id;
+                    location.href = '../html/details.html?id='+id;
+                })
+                
             }
         })
     })

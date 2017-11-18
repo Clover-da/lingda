@@ -27,4 +27,9 @@
     }).on('mouseleave',function(e){
             $('.san_nav').remove();
     })
+
+    //点击三级导航进入列表页
+    $('.all dl').on('click','a',function(){
+        location.href = '../html/list.html';
+    })
 })(jQuery);
