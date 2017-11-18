@@ -14,18 +14,18 @@
                 <div class="logIn_l">蜜芽</div>
                 <div class="logIn_r">
                     <form action="#" method="post" name="蜜芽登陆">
-                        <p style="color:#F450A2;" class="p1">登录蜜芽<span class="fr">还没有蜜芽账号？  <a href="#" >30秒注册</a></span></p>
+                        <p style="color:#F450A2;" class="p1">登录蜜芽<span class="fr">还没有蜜芽账号？  <a href="signIn.html" >30秒注册</a></span></p>
                         <p class="p2">
                             <i class="iconfont icon-denglu"></i>
-                            <input type="text" placeholder="手机号"/>
+                            <input type="text" placeholder="手机号" id="username"/>
                         </p>
                         <p class="p3">
-                            <i class="iconfont icon-mima"></i><input type="password" placeholder="密码" id="pwd1"/>
+                            <i class="iconfont icon-mima"></i><input type="password" placeholder="密码" id="pwd"/>
                         </p>
                         <p class="p4">
                             <input type="text" placeholder="短信验证码"/><button>获取短信验证码</button>
                         </p>
-                        <p class="p5"><input type="button" value="登录"/></p>
+                        <p class="p5"><input type="button" value="登录" id="btn"/></p>
                         <p class="p6"><span>使用以下账号登录：</span><a href="#" class="iconfont icon-weixin"></a><a href="#" class="iconfont icon-weibo"></a></p>
                     </form>
                 </div>
@@ -33,5 +33,8 @@
             <div class="logIn_b">Copyright ©2017 北京花旺在线商贸有限公司 Miyabaobei.com 保留一切权利。客服热线： 400-789-2000。京ICP证140430号 京ICP备14006215号</div>
         </div>
     </div>
+
+    <script src="../lib/JQ/jquery-3.2.1.js"></script>
+    <script src="../js/logIn.js"></script>
 </body>
 </html>

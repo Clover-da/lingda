@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-11-17 09:37:24
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-11-17 19:02:48
+* @Last Modified time: 2017-11-18 11:39:45
 */
 
 require(['config'],function(){
@@ -39,7 +39,7 @@ require(['config'],function(){
 
         $.ajax({
             type:'get',
-            url:'http://localhost:168/api/list.php',
+            url:'../api/list.php',
             data:{pageNo:pageNo,qty:qty},
             success:function(data){
                 var res = JSON.parse(data);
