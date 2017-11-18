@@ -70,8 +70,8 @@ require(['config'],function(){
             $img_w.attr('src','../'+res[0].imgurl);
             $img_w.attr('data-id',res[0].id);
             $details_w.html(res[0].details);
-            $price_w.html('￥'+res[0].price);
-            $outprice_w.html('￥'+res[0].outprice);
+            $price_w.html(res[0].price);
+            $outprice_w.html(res[0].outprice);
 
             //放大镜
             $('.xx_l').EdZoom({
@@ -166,6 +166,7 @@ require(['config'],function(){
                     currentIdx = idx;
                     return goods.id == id;
                 });
+
                 if(res){
                     // 如果商品已经存在
                     datalist[currentIdx].qty = $shul.find('span').html();

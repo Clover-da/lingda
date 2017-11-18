@@ -82,10 +82,13 @@ header .header_pld ul li:nth-child(2) a {
   font-size: 12px;
 }
 
+.cart_pld {
+  margin-bottom: 30px;
+}
+
 .cart_pld .shangpin {
   padding: 0 50px;
   min-height: 470px;
-  position: relative;
 }
 
 .cart_pld .shangpin h4 {
@@ -101,6 +104,10 @@ header .header_pld ul li:nth-child(2) a {
   line-height: 47px;
   height: 47px;
   border-bottom: 2px solid #FA4B9B;
+}
+
+.cart_pld .shangpin .content {
+  min-height: 470px;
 }
 
 .cart_pld .shangpin .content .c_menu {
@@ -163,6 +170,11 @@ header .header_pld ul li:nth-child(2) a {
 
 .cart_pld .shangpin .content .c_menu .ci7 {
   width: 120px;
+}
+
+.cart_pld .shangpin .content .commodity {
+  min-height: 470px;
+  margin-bottom: 20px;
 }
 
 .cart_pld .shangpin .content .commodity ul {
@@ -251,11 +263,7 @@ header .header_pld ul li:nth-child(2) a {
   height: 60px;
   width: 1000px;
   border: 1px solid #ccc;
-  margin-top: 60px;
-  margin-left: 30px;
-  position: absolute;
-  left: 20px;
-  bottom: 0;
+  margin-left: 0;
 }
 
 .cart_pld .shangpin .content .total .caozuo {

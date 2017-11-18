@@ -78,10 +78,10 @@ header{
     }
 }
 .cart_pld{
+    margin-bottom:30px;
     .shangpin{
         padding:0 50px;
         min-height:470px;
-        position:relative;
         h4{
             box-sizing:border-box;
             height:47px;
@@ -96,6 +96,7 @@ header{
             }
         }
         .content{
+            min-height:470px;
             .c_menu{
                 height:50px;
                 padding-left:20px;
@@ -148,6 +149,8 @@ header{
                 }
             }
             .commodity{
+                min-height:470px;
+                margin-bottom:20px;
                 ul{
                     box-sizing:border-box;
                     border:1px solid #ccc;
@@ -224,11 +227,7 @@ header{
                 height:60px;
                 width:1000px;
                 border:1px solid #ccc;
-                margin-top:60px;
-                margin-left:30px;
-                position:absolute;
-                left:20px;
-                bottom:0;
+                margin-left:0;
                 .caozuo{
                     box-sizing:border-box;
                     float:left;
