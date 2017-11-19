@@ -126,20 +126,20 @@ header .header_pld ul li:nth-child(2) a {
   width: 90px;
 }
 
-.cart_pld .shangpin .content .c_menu .ci1 .checkbox {
+.cart_pld .shangpin .content .c_menu .ci1 .all_checkbox {
   display: inline-block;
   height: 22px;
   width: 22px;
   background: url("../img/cart_checkbox.png") 0 0 no-repeat;
 }
 
-.cart_pld .shangpin .content .c_menu .ci1 .checkbox input {
+.cart_pld .shangpin .content .c_menu .ci1 .all_checkbox input {
   height: 22px;
   width: 22px;
   opacity: 0;
 }
 
-.cart_pld .shangpin .content .c_menu .ci1:active .checkbox {
+.cart_pld .shangpin .content .c_menu .ci1 .all_checkbox.checked {
   background: url("../img/cart_checkbox.png") 0 -178px no-repeat;
 }
 
@@ -215,7 +215,7 @@ header .header_pld ul li:nth-child(2) a {
   opacity: 0;
 }
 
-.cart_pld .shangpin .content .commodity ul li:nth-child(1):active .checkbox {
+.cart_pld .shangpin .content .commodity ul li:nth-child(1) .checkbox.checked {
   background: url("../img/cart_checkbox.png") 0 -178px no-repeat;
 }
 
@@ -235,7 +235,12 @@ header .header_pld ul li:nth-child(2) a {
   line-height: 24px;
 }
 
-.cart_pld .shangpin .content .commodity ul li:nth-child(2) span:nth-child(3) {
+.cart_pld .shangpin .content .commodity ul li:nth-child(2) span:nth-child(2), .cart_pld .shangpin .content .commodity ul li:nth-child(2) i:nth-child(1) {
+  font-size: 18px;
+  color: #f43499;
+}
+
+.cart_pld .shangpin .content .commodity ul li:nth-child(2) span:nth-child(5), .cart_pld .shangpin .content .commodity ul li:nth-child(2) i:nth-child(4) {
   text-decoration: line-through;
 }
 
@@ -250,12 +255,23 @@ header .header_pld ul li:nth-child(2) a {
   width: 20px;
   border: 1px solid #eee;
   background-color: #eee;
+  cursor: pointer;
 }
 
 .cart_pld .shangpin .content .commodity ul li:nth-child(3) .sl span {
   display: inline-block;
   height: 20px;
   width: 20px;
+}
+
+.cart_pld .shangpin .content .commodity ul li:nth-child(4) {
+  font-size: 18px;
+  color: #f43499;
+}
+
+.cart_pld .shangpin .content .commodity ul li:nth-child(5) span:hover {
+  color: #f43499;
+  cursor: pointer;
 }
 
 .cart_pld .shangpin .content .total {
@@ -293,7 +309,7 @@ header .header_pld ul li:nth-child(2) a {
   opacity: 0;
 }
 
-.cart_pld .shangpin .content .total .caozuo .xuanz:active .checkbox {
+.cart_pld .shangpin .content .total .caozuo .xuanz .checkbox.checked {
   background: url("../img/cart_checkbox.png") 0 -178px no-repeat;
 }
 
@@ -307,7 +323,7 @@ header .header_pld ul li:nth-child(2) a {
 
 .cart_pld .shangpin .content .total .jisuan {
   float: left;
-  width: 350px;
+  width: 480px;
   height: 60px;
   font-size: 14px;
   line-height: 60px;

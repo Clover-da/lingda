@@ -108,7 +108,7 @@ header{
                 }
                 .ci1{
                     width:90px;
-                    .checkbox{
+                    .all_checkbox{
                         display:inline-block;
                         height:22px;
                         width:22px;
@@ -118,9 +118,9 @@ header{
                             width:22px;
                             opacity:0;
                         }
-                    }
-                    &:active .checkbox{
-                        background:url("../img/cart_checkbox.png") 0 -178px no-repeat;
+                        &.checked{
+                            background:url("../img/cart_checkbox.png") 0 -178px no-repeat;
+                        }
                     }
                     
                 }
@@ -180,9 +180,9 @@ header{
                                     width:22px;
                                     opacity:0;
                                 }
-                            }
-                            &:active .checkbox{
-                                background:url("../img/cart_checkbox.png") 0 -178px no-repeat;
+                                &.checked{
+                                    background:url("../img/cart_checkbox.png") 0 -178px no-repeat;
+                                }
                             }
                             img{
                                 height:80px;
@@ -197,7 +197,11 @@ header{
                         &:nth-child(2){
                             padding-top:8px;
                             line-height:24px;
-                            span:nth-child(3){
+                            span:nth-child(2),i:nth-child(1){
+                                font-size:18px;
+                                color:#f43499;
+                            }
+                            span:nth-child(5),i:nth-child(4){
                                 text-decoration:line-through;
                             }
                         }
@@ -211,12 +215,23 @@ header{
                                    width:20px; 
                                    border:1px solid #eee;
                                    background-color:#eee;
+                                   cursor:pointer;
                                 }
                                 span{
                                     display:inline-block;
                                     height:20px;
                                     width:20px;
                                 }
+                            }
+                        }
+                        &:nth-child(4){
+                            font-size:18px;
+                            color:#f43499;
+                        }
+                        &:nth-child(5){
+                            span:hover{
+                                color:#f43499;
+                                cursor:pointer;
                             }
                         }
                     }
@@ -248,9 +263,9 @@ header{
                                 width:22px;
                                 opacity:0;
                             }
-                        }
-                        &:active .checkbox{
-                            background:url("../img/cart_checkbox.png") 0 -178px no-repeat;
+                            &.checked{
+                                background:url("../img/cart_checkbox.png") 0 -178px no-repeat;
+                            }
                         }
                     }
                     a{
@@ -262,7 +277,7 @@ header{
                 }
                 .jisuan{
                     float:left;
-                    width:350px;
+                    width:480px;
                     height:60px;
                     font-size:14px;
                     line-height:60px;
