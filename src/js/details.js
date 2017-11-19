@@ -128,6 +128,7 @@ require(['config'],function(){
             datalist = JSON.parse(datalist);
         }
 
+        
 
         //飞入购物车
         function fly(e1,e2){
@@ -135,6 +136,8 @@ require(['config'],function(){
             var $cart = e1;
             var $num = e2;
 
+            $num.html(datalist.length);
+            
             $fly_btn.on('click',function(){
                 //获取图片,复制图片,放在原来的图片的上面改变left和top值
                 var $img = $('.xx_l').children('img');

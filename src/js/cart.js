@@ -36,7 +36,7 @@ require(['config'],function(){
                             
                         </li>
                         <li>
-                            <span>${item.price*1*item.qty*1}</span>
+                            <span>${(item.price*1*item.qty*1).toFixed(2)}</span>
                         </li>
                         <li>
                             <span>删除</span>
