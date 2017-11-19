@@ -36,4 +36,5 @@
     $('.all dl').on('click','i',function(){
         location.href = '../html/list.html';
     });
+
 })(jQuery);

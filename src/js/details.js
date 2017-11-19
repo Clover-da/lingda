@@ -14,7 +14,10 @@ require(['config'],function(){
                         $('.all dl').hide();
                     },500)   
                 })
-
+                //跳转购物车
+                $('.cart').on('click',function(e){
+                    location.href = '../html/cart.html';
+                })
                 fly($('.cart'),$('.num'));
             });
         });
@@ -195,7 +198,7 @@ require(['config'],function(){
                 // * JSON.stringify():把js对象（数组）转换成json字符串
                 // * JSON.parse():把json字符串转换成js对象（数组）
                 //{guid:g01,imgulr:'xxx.jpg'}
-                com.Cookie.set('datalist',JSON.stringify(datalist));
+                com.Cookie.set('datalist',JSON.stringify(datalist),'','/');
             })
         }
 

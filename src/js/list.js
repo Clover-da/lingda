@@ -2,11 +2,11 @@
 * @Author: Marte
 * @Date:   2017-11-17 09:37:24
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-11-18 17:25:11
+* @Last Modified time: 2017-11-19 17:28:20
 */
 
 require(['config'],function(){
-    require(['jquery'],function($){
+    require(['jquery','common'],function($,com){
         //加载头尾部
         $('#header_pld').load('header.html',function(){
             require(['header'],function(){
@@ -21,6 +21,21 @@ require(['config'],function(){
                         $('.all dl').hide();
                     },500)   
                 })
+
+                //跳转购物车
+                $('.cart').on('click',function(){
+                    location.href = '../html/cart.html';
+                })
+
+                //购物车数量
+                //获取cookie的数据
+                var datalist = com.Cookie.get('datalist');
+
+                if(datalist){
+                    datalist = JSON.parse(datalist);
+                }
+                console.log(datalist);
+                $('.num').html(datalist.length);
             });
         });
         $('#footer_pld').load('footer.html');

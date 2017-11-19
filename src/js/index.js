@@ -2,12 +2,12 @@
 * @Author: Marte
 * @Date:   2017-11-16 10:48:18
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-11-18 17:46:13
+* @Last Modified time: 2017-11-19 17:24:44
 */
 
 //首页
 require(['config'],function(){
-    require(['jquery','pldCarousel'],function($){
+    require(['jquery','pldCarousel','common'],function($,p,com){
         $('#header_pld').load('html/header.html',function(){
             require(['header'],function(){
                 $('.header_pld').find('ol').children('li').find('a').on('click',function(e){
@@ -19,6 +19,20 @@ require(['config'],function(){
                         e.target.href = '../html/signIn.html';
                     }
                 })
+
+                $('.cart').on('click',function(){
+                        location.href = '../html/cart.html';
+                })
+
+                //购物车数量
+                //获取cookie的数据
+                var datalist = com.Cookie.get('datalist');
+
+                if(datalist){
+                    datalist = JSON.parse(datalist);
+                }
+                console.log(datalist);
+                $('.num').html(datalist.length);
             });
         });
         $('#footer_pld').load('html/footer.html');
