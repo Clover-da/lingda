@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-11-17 09:37:24
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-11-19 17:28:20
+* @Last Modified time: 2017-11-20 16:10:08
 */
 
 require(['config'],function(){
@@ -99,7 +99,7 @@ require(['config'],function(){
 
                 $.ajax({
                     type:'get',
-                    url:'http://localhost:168/api/list.php',
+                    url:'../api/list.php',
                     data:obj,
                     success:function(data){
                         var res = JSON.parse(data);
@@ -152,7 +152,7 @@ require(['config'],function(){
                     obj = Object.assign({},obj,{pageNo:pageNo1})
                     $.ajax({
                         type:'get',
-                        url:'http://localhost:168/api/list.php',
+                        url:'../api/list.php',
                         data:obj,
                         success:function(data){
                             var res = JSON.parse(data);
